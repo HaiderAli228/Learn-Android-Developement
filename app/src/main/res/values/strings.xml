@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">LearnAndroidDev</string>
+    <string name="email">Enter Email Here</string>
+    <string name="password">Enter Password Here</string>
+    <string name="buttonText">Submit</string>
+    <string name="checkBox1">First CheckBox</string>
+    <string name="checkBox2">Second CheckBox</string>
+    <string name="radio1">First radio</string>
+    <string name="radio2">Second radio</string>
 </resources>

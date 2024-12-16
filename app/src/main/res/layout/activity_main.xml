@@ -1,19 +1,180 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_margin="30dp"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <TextView
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/email"
+        android:inputType="textEmailAddress"
+        android:layout_margin="5dp"
+        android:padding="12dp"
+        android:drawableStart="@drawable/email"
+        android:drawablePadding="8dp"
+        android:background="@drawable/edittext_border" />
+
+
+
+    <!-- Password Field -->
+    <EditText
+        android:layout_width="match_parent"
+        android:drawablePadding="8dp"
+        android:layout_height="wrap_content"
+        android:autofillHints=""
+        android:hint="@string/password"
+        android:drawableStart="@drawable/passwors"
+        android:layout_margin="5dp"
+        android:inputType="textEmailAddress"
+        android:padding="12dp"
+        android:background="@drawable/edittext_border" />
+
+    <!-- Checkboxes -->
+    <CheckBox
+        android:id="@+id/checkbox1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:text="@string/checkBox1"
+        android:layout_marginTop="12dp"/>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <CheckBox
+        android:id="@+id/checkbox2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/checkBox2"/>
+
+    <!-- Radio Group -->
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="12dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:ignore="UselessParent">
+
+            <RadioButton
+                android:id="@+id/radio1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/radio1"/>
+
+            <RadioButton
+                android:id="@+id/radio2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/radio2"/>
+
+        </LinearLayout>
+
+    </RadioGroup>
+
+    <!-- Submit Button -->
+    <Button
+        android:id="@+id/submit_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/buttonText"
+        android:layout_marginTop="16dp"
+        android:textColor="@android:color/white"
+        android:padding="12dp"/>
+
+</androidx.appcompat.widget.LinearLayoutCompat>
+
+    <!-- ======================= This is Calander View ==========================-->
+    <!--   <CalendarView-->
+    <!--       android:layout_width="match_parent"-->
+    <!--       android:layout_height="match_parent"-->
+    <!--       android:firstDayOfWeek="1"-->
+    <!--       android:minDate="1/1/2000"-->
+    <!--       android:maxDate="1/1/2034"-->
+    <!--       >-->
+    <!--   </CalendarView>-->
+
+    <!--    <RatingBar-->
+    <!--        android:layout_width="400dp"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:rating="3"-->
+    <!--        android:numStars="6"-->
+    <!--        tools:ignore="MissingConstraints">-->
+    <!--    </RatingBar>-->
+
+    <!--    <ProgressBar-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        app:circularflow_viewCenter="@color/black">-->
+    <!--    </ProgressBar>-->
+    <!--    <SeekBar-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        >-->
+    <!--    </SeekBar>-->
+    <!--    <Button-->
+    <!--        android:layout_width="0dp"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_weight="1"-->
+    <!--        android:text="Button 1"-->
+    <!--        tools:ignore="HardcodedText"/>-->
+
+    <!--    <ImageView-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:src="@drawable/hiring"-->
+    <!--        -->
+    <!--        tools:ignore="ContentDescription" />-->
+
+
+    <!--    <TextView-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_gravity="center"-->
+    <!--        android:text="Haider Ali"-->
+    <!--        tools:ignore="HardcodedText"/>-->
+
+    <!--    <Button-->
+    <!--        android:id="@+id/btn"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_gravity="center"-->
+    <!--        android:gravity="center"-->
+    <!--        android:text="Click to show Text"-->
+    <!--        android:layout_margin="20dp"-->
+    <!--        android:textSize="20sp"-->
+    <!--        android:padding="30dp"-->
+    <!--        tools:ignore="HardcodedText"/>-->
+
+    <!--    <TextView-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_gravity="center"-->
+    <!--        android:gravity="center"-->
+    <!--        android:padding="30dp"-->
+    <!--        android:text="Haider Ali"-->
+    <!--        android:textSize="50sp"-->
+    <!--        android:textAllCaps="true"-->
+    <!--        android:textColor="@color/white"-->
+    <!--        android:background="@color/black"-->
+    <!--        android:id="@+id/txt"-->
+    <!--        android:fontFamily="@font/text"-->
+    <!--        tools:ignore="HardcodedText"-->
+    <!--        >-->
+    <!--    </TextView>-->
+
+    <!--    <ImageView-->
+    <!--        android:layout_width="300dp"-->
+    <!--        android:layout_height="300dp"-->
+    <!--        android:layout_gravity="center"-->
+    <!--        android:src="@drawable/ic_android_black_24dp"-->
+    <!--        tools:ignore="ContentDescription" />-->
+
+    <!-- Email Field -->
