@@ -19,9 +19,8 @@
         android:padding="12dp"
         android:drawableStart="@drawable/email"
         android:drawablePadding="8dp"
-        android:background="@drawable/edittext_border" />
-
-
+        android:background="@drawable/edittext_border"
+        tools:ignore="Autofill" />
 
     <!-- Password Field -->
     <EditText
@@ -42,7 +41,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/checkBox1"
-        android:layout_marginTop="12dp"/>
+        />
 
     <CheckBox
         android:id="@+id/checkbox2"
@@ -56,7 +55,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:layout_marginTop="12dp">
+        android:layout_marginBottom="12dp">
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -78,6 +77,78 @@
         </LinearLayout>
 
     </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+<!--       Nested Linear layout  start here -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/chooseLanguageText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/chooseLangText"
+                android:textSize="18sp"
+                android:paddingEnd="20dp"
+                android:textColor="#000000"
+                android:gravity="center"
+                tools:ignore="RtlSymmetry" />
+
+            <CheckBox
+                android:id="@+id/checkbox3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/checkBox3"
+               />
+            <CheckBox
+                android:id="@+id/checkbox4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/checkBox4"
+               />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/chooseSemText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/chooseSemText"
+                android:textSize="18sp"
+                android:paddingRight="40dp"
+                android:textColor="#000000"
+                android:gravity="center"
+                tools:ignore="RtlHardcoded,RtlSymmetry" />
+
+            <RadioButton
+                android:id="@+id/radio3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/radio3"/>
+
+            <RadioButton
+                android:id="@+id/radio4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/radio4"
+                />
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+    <!--       Nested Linear layout  end here -->
+
 
     <!-- Submit Button -->
     <Button

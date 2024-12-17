@@ -7,4 +7,10 @@
     <string name="checkBox2">Second CheckBox</string>
     <string name="radio1">First radio</string>
     <string name="radio2">Second radio</string>
+    <string name="radio3">7th Semester</string>
+    <string name="radio4">8th Semester</string>
+    <string name="checkBox3">C ++</string>
+    <string name="checkBox4">Java</string>
+    <string name="chooseSemText">Choose Semester</string>
+    <string name="chooseLangText">Choose Language</string>
 </resources>
