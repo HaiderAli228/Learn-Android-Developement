@@ -9,6 +9,17 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/form"
+        android:textSize="18sp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="10dp"
+        android:paddingEnd="20dp"
+        android:textColor="#000000"
+        tools:ignore="RtlSymmetry" />
+
     <EditText
         android:id="@+id/email"
         android:layout_width="match_parent"
@@ -31,61 +42,63 @@
         android:hint="@string/password"
         android:drawableStart="@drawable/passwors"
         android:layout_margin="5dp"
-        android:inputType="textEmailAddress"
+        android:inputType="textPassword"
         android:padding="12dp"
         android:background="@drawable/edittext_border" />
 
-    <!-- Checkboxes -->
-    <CheckBox
-        android:id="@+id/checkbox1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/checkBox1"
-        />
+<!--    &lt;!&ndash; Checkboxes &ndash;&gt;-->
+<!--    <CheckBox-->
+<!--        android:id="@+id/checkbox1"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="@string/checkBox1"-->
+<!--        />-->
 
-    <CheckBox
-        android:id="@+id/checkbox2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/checkBox2"/>
+<!--    <CheckBox-->
+<!--        android:id="@+id/checkbox2"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="@string/checkBox2"/>-->
 
-    <!-- Radio Group -->
-    <RadioGroup
-        android:id="@+id/radioGroup"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:layout_marginBottom="12dp">
+<!--    &lt;!&ndash; Radio Group &ndash;&gt;-->
+<!--    <RadioGroup-->
+<!--        android:id="@+id/radioGroup"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:orientation="vertical"-->
+<!--        android:layout_marginBottom="12dp">-->
 
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            tools:ignore="UselessParent">
+<!--        <LinearLayout-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            tools:ignore="UselessParent">-->
 
-            <RadioButton
-                android:id="@+id/radio1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/radio1"/>
+<!--            <RadioButton-->
+<!--                android:id="@+id/radio1"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="@string/radio1"/>-->
 
-            <RadioButton
-                android:id="@+id/radio2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/radio2"/>
+<!--            <RadioButton-->
+<!--                android:id="@+id/radio2"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="@string/radio2"/>-->
 
-        </LinearLayout>
+<!--        </LinearLayout>-->
 
-    </RadioGroup>
+<!--    </RadioGroup>-->
 
     <LinearLayout
         android:layout_width="match_parent"
+        android:layout_marginTop="30dp"
         android:layout_height="wrap_content" >
 
 <!--       Nested Linear layout  start here -->
         <LinearLayout
             android:layout_width="wrap_content"
             android:orientation="vertical"
+
             android:layout_height="wrap_content">
 
             <TextView
@@ -94,7 +107,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/chooseLangText"
                 android:textSize="18sp"
-                android:paddingEnd="20dp"
+                android:paddingEnd="15dp"
                 android:textColor="#000000"
                 android:gravity="center"
                 tools:ignore="RtlSymmetry" />
@@ -124,11 +137,13 @@
                 android:layout_height="wrap_content"
                 android:text="@string/chooseSemText"
                 android:textSize="18sp"
-                android:paddingRight="40dp"
+                android:paddingRight="20dp"
                 android:textColor="#000000"
                 android:gravity="center"
                 tools:ignore="RtlHardcoded,RtlSymmetry" />
-
+<RadioGroup
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
             <RadioButton
                 android:id="@+id/radio3"
                 android:layout_width="wrap_content"
@@ -141,6 +156,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/radio4"
                 />
+</RadioGroup>
         </LinearLayout>
 
 
@@ -148,7 +164,6 @@
     </LinearLayout>
 
     <!--       Nested Linear layout  end here -->
-
 
     <!-- Submit Button -->
     <Button
@@ -159,6 +174,67 @@
         android:layout_marginTop="16dp"
         android:textColor="@android:color/white"
         android:padding="12dp"/>
+
+
+<!--    Assignment 2 start here -->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Assignment 2"
+        android:textSize="38sp"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:paddingEnd="20dp"
+        android:textColor="#000000"
+        tools:ignore="RtlSymmetry" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical"
+        android:layout_gravity="center">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:text="text 1"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:text="text 2"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="30sp"
+            android:gravity="center"
+            android:text="text 3"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="30sp"
+            android:gravity="center"
+            android:text="text 4"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="30sp"
+            android:gravity="center"
+            android:text="text 5"/>
+    </LinearLayout>
+
+<!--    Assignment 2 end here -->
 
 </androidx.appcompat.widget.LinearLayoutCompat>
 
